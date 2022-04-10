@@ -1,5 +1,6 @@
 package br.com.dio.desafio.application;
 
+import br.com.dio.desafio.dominio.Conteudo;
 import br.com.dio.desafio.dominio.Curso;
 import br.com.dio.desafio.dominio.Mentoria;
 
@@ -27,5 +28,13 @@ public class Program {
         mentoria1.setDate(LocalDate.now());
 
         System.out.println(mentoria1);
+
+        Curso curso3 = new Curso();
+        curso3.setTitle("Curso Pentesting");
+        curso3.setDescription("Aprenda técnicas de Hacking");
+        curso3.setCargaHoraria(40);
+
+        System.out.println(curso3);
+
     }
 }
